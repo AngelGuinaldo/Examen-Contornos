@@ -4,22 +4,22 @@ public class Factorial {
 
     public static void main(String[] args) {
 
-        int j;
-        int f;
+        int numerobase; //numerobase porque es del cual se parte
+        int multiplicaciones; // este nombre porque son las cuentas
 
-        j = 8;
+        numerobase = 8; // este es el numero base que se va a factorizar
 
-        int i;
-        if (j == 0) {
-            f = 1;
+        int contador; // el contador para contar hasta 1
+        if (numerobase == 0) {
+           multiplicaciones = 1;
         } else {
-            f = 1;
-            for (i = j; i >= 1; i--) {
-                f = f * i;
+            multiplicaciones = 1;
+            for (contador = numerobase; contador >= 1; contador--) {
+                multiplicaciones = multiplicaciones * contador;
             }
         }
 
-        System.out.println(f);
+        System.out.println(multiplicaciones);
 
     }
 
